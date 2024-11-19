@@ -1,0 +1,21 @@
+﻿@{ var action = ViewContext.RouteData.Values["Action"] as string;
+   var controller = ViewContext.RouteData.Values["Controller"] as string;
+    ViewBag.Title = action; }
+
+<h1>@action</h1>
+
+@using (Html.BeginForm(action, controller, FormMethod.Post))
+{
+    @Html.TextBox("x", "", new { type = "number" })
+    <br />
+    @Html.DropDownList("operation", new SelectList(new[] { "+", "-", "*", "/" }))
+    <br />
+    @Html.TextBox("y", "", new {type="number" })
+    <br />
+<input type="submit" value="Submit" />
+
+
+}
+@*<h1>Window</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>*@
