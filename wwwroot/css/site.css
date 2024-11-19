@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+A {
+    color: black;
+}
+
+    A:visited {
+        color: gray;
+    }
+
+header {
+    background-color: black;
+    color: gray;
+}
+
+    header h2 {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    header nav {
+        display: inline-block;
+    }
+
+        header nav a {
+            text-decoration: none;
+        }
+
+header, main, footer {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+h1, h2 {
+    font-weight: lighter;
+}
